@@ -1,0 +1,96 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #8A1919;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    background: #E9B900;
+    color: #fefefe;
+    padding: 2rem 0;
+}
+
+.header a{
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.inicio{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;  
+}
+
+.inicio:hover{
+    background: #b57405;
+}
+
+.navegation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegation ul li {
+    display: inline-block;
+}
+
+.navegation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navegation ul li a:hover{
+    background: #b57405;
+}
+
+@media screen and (max-width:767px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navegation{
+        width: 100%;
+    }
+        .navegation ul{
+            display: none;
+        }
+
+        .navegation ul .show{
+            display: block ;
+        }
+        .navegation ul li {
+        display: block;
+    }
+    
+            .navegation ul li a{
+        display: block;
+        padding: 0.5rem 0rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+             .navegation ul li a:hover{
+        background: #b57405;
+    }
+}

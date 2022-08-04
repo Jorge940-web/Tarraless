@@ -1,0 +1,201 @@
+/*Configuración Natural*/
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #8A1919;
+}
+
+
+/*CONFIGURCIÓN BARRA SUPERIOR*/
+.container{
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    background: #E9B900;
+    color: #fefefe;
+    padding: 2rem 0;
+}
+
+.header a{
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.inicio{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;  
+}
+
+.inicio:hover{
+    background: #b57405;
+}
+
+.navegation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegation ul li {
+    display: inline-block;
+}
+
+.navegation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navegation ul li a:hover{
+    background: #b57405;
+}
+
+@media screen and (max-width:767px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navegation{
+        width: 100%;
+    }
+        .navegation ul{
+            display: none;
+        }
+
+        .navegation ul .show{
+            display: block ;
+        }
+        .navegation ul li {
+        display: block;
+    }
+    
+            .navegation ul li a{
+        display: block;
+        padding: 0.5rem 0rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+             .navegation ul li a:hover{
+        background: #b57405;
+    }
+}
+
+
+
+/*DECORACIÓN*/
+#mostrador{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#mostrador img{
+    width: 100%;
+}
+
+.lineas{
+    width: 100%;
+    height: 100%;
+}
+
+.cuerpo{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*LOGO TARRALES*/
+.logo{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 1050px;
+}
+
+
+/*PIE DE PAGINA*/
+footer{
+    margin: 0;
+}
+
+.pie-pagina{
+    width: 100;
+    background-color:#8A1919;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #ffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #fefefe;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color:#8A1919;
+    margin-right: 10px;
+    background-color:#E9B900;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #fefefe;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #8A1919;
+    padding: 15px 10px;
+    text-align: center;
+    color: #E9B900;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
